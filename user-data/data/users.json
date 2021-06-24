@@ -1,0 +1,19 @@
+{
+    "data": [
+        {
+            "id": "001",
+            "name": "Tapas A",
+            "address": "Bengaluru"
+        },
+        {
+            "id": "002",
+            "name": "Alex B",
+            "address": "USA"
+        },
+        {
+            "id": "003",
+            "name": "Robert A",
+            "address": "California"
+        }
+    ]
+}
