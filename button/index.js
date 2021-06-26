@@ -2,7 +2,7 @@
 function fetchUserData () {
 
 
-    fetch('./user-data/index.json')
+    fetch("./user-data/index.json")
     .then(response => response.json())
         .then(data => {
             console.log(data); 
