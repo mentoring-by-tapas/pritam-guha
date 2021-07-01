@@ -2,7 +2,7 @@
 function fetchUserData() {
 
 
-    fetch('./data/users.json')
+    fetch('./data/movies.json')
         .then(response => response.json())
             .then(data => {
                 // All users
@@ -10,7 +10,7 @@ function fetchUserData() {
                 console.log(users);
 
                 // main div
-                const mainDiv = document.getElementById('pritam-id');
+                const mainDiv = document.getElementById('muvie-id');
                 
                 // ul
                 const ul = document.createElement('ul');
