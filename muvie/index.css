@@ -1,0 +1,10 @@
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.user-row {
+    padding: 10px;
+    font-size: 30px;
+    background-image: url("https://res.cloudinary.com/dig3gb1rw/image/upload/v1623339802/34922_aoarvn.jpg");
+}
