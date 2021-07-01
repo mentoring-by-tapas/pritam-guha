@@ -1,8 +1,6 @@
-console.log('main.js');
 
 function fetchUserData() {
 
-    // Fetch User data here using - https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
 
     fetch('./data/users.json')
         .then(response => response.json())
@@ -21,7 +19,7 @@ function fetchUserData() {
                 for (let index=0; index<= users.length -1; index++) {
                     const li = document.createElement('li');
                     li.setAttribute('class', 'user-row');
-                    li.innerHTML = `<span>${users[index].name}</span> stays at <span><b>${users[index].address}</b></span>`;
+                    li.innerHTML = `<span>${users[index].name}</span> rating is <span><b>${users[index].rating}</b></span> director is <span><b>${users[index].director}</b></span>`;
                     ul.appendChild(li);
                 }
                 
