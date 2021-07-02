@@ -6,20 +6,32 @@ function fetchUserData() {
         .then(response => response.json())
             .then(data => {
                 // All users
-                const users = data.users;
-                console.log(users);
+                const movies = data.movies;
+                console.log(movies);
 
                 // main div
-                const mainDiv = document.getElementById('muvie-id');
+                const mainDiv = document.getElementById('movies-id');
                 
                 // ul
                 const ul = document.createElement('ul');
                 mainDiv.appendChild(ul);
 
-                for (let index=0; index<= users.length -1; index++) {
+                for (let index=0; index<= movies.length -1; index++) {
                     const li = document.createElement('li');
                     li.setAttribute('class', 'user-row');
-                    li.innerHTML = `<span>${users[index].name}</span> rating is <span><b>${users[index].rating}</b></span> director is <span><b>${users[index].director}</b></span>`;
+                    li.innerHTML = `
+                        <span>
+                        <img src="https://res.cloudinary.com/dig3gb1rw/image/upload/v1623339802/34922_aoarvn.jpg" alt="Girl in a jacket" width="30%" height="200px">
+                        </span>
+                        <span>
+                           <b>${movies[index].name}</b>
+                        </span> rating is 
+                        <span>
+                            <b>${movies[index].rating}</b>
+                        </span> director is 
+                        <span>
+                        <b>${movies[index].director}</b>
+                        </span>`;
                     ul.appendChild(li);
                 }
                 
