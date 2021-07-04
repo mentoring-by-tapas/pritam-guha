@@ -1,6 +1,6 @@
 {
     "movies": [
-        {
+        {   "img" : "https://res.cloudinary.com/dig3gb1rw/image/upload/v1623339802/34922_aoarvn.jpg",
             "movie-photo": "01",
             "name": "joker 2019",
             "rating": "5 star",

@@ -21,7 +21,7 @@ function fetchUserData() {
                     li.setAttribute('class', 'user-row');
                     li.innerHTML = `
                         <span>
-                        <img src="https://res.cloudinary.com/dig3gb1rw/image/upload/v1623339802/34922_aoarvn.jpg" alt="Girl in a jacket" width="30%" height="200px">
+                            <b>${movies[index].img}</b>
                         </span>
                         <span>
                            <b>${movies[index].name}</b>
