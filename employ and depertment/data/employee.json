@@ -1,0 +1,49 @@
+{
+    "employee": [
+        {
+            "id": "E-001",
+            "name": "Pritam Guha",
+            "dept_id": "D-001",
+            "salary": "34564840",
+            "date_of_birth": "02-03-1982",
+            "joining_date": "07-14-2007",
+            "isParmanent": true
+        },
+        {
+            "id": "E-001",
+            "name": "Tapas Adhikary",
+            "dept_id": "D-002",
+            "salary": "34564840",
+            "date_of_birth": "02-03-1982",
+            "joining_date": "07-14-2007",
+            "isParmanent": true
+        },
+        {
+            "id": "E-001",
+            "name": "Nandita Ghosh",
+            "dept_id": "D-003",
+            "salary": "34564840",
+            "date_of_birth": "02-03-1982",
+            "joining_date": "07-14-2007",
+            "isParmanent": true
+        },
+        {
+            "id": "E-001",
+            "name": "reshmi Adhikary",
+            "dept_id": "D-004",
+            "salary": "34564840",
+            "date_of_birth": "02-03-1982",
+            "joining_date": "07-14-2007",
+            "isParmanent": true
+        },
+        {
+            "id": "E-001",
+            "name": "Saheb Adhikary",
+            "dept_id": "D-005",
+            "salary": "34564840",
+            "date_of_birth": "02-03-1982",
+            "joining_date": "07-14-2007",
+            "isParmanent": true
+        }
+    ]
+}
