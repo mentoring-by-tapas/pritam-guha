@@ -1,4 +1,6 @@
 async function fetchEmployeeData(){
+
+
     let secondDiv = document.getElementById('department-id'); 
     let mainDiv = document.getElementById('employee-id');
 
@@ -8,6 +10,26 @@ async function fetchEmployeeData(){
                 // All users
              let employee = data.employee;
              console.log(employee);
+
+             let ul = document.createElement('ul');
+             mainDiv.appendChild(ul);
+             console.log(mainDiv);
+
+             for (let index=0; index<= employee.length -1; index++) {
+                let li = document.createElement('li');
+                ul.appendChild(li);
+                li.setAttribute('class', 'first-row');
+                li.innerHTML = `
+                    <p>
+                       <b>${employee[index].name}</b>
+                    </p> 
+                    <p>
+                        <b>${employee[index].salary}</b>
+                    </p> 
+                    <p>
+                    <b>${employee[index].id}</b>
+                    </p>`;
+            }        
                    
             })
   
@@ -17,28 +39,8 @@ async function fetchEmployeeData(){
              // All users
              let department = data.depertment;
              console.log(department);
-
-
-             // ul
-             let ul = document.createElement('ul');
-             mainDiv.appendChild(ul);
-             console.log(mainDiv);
-
-             for (let index=0; index<= employee.length -1; index++) {
-                 let li = document.createElement('li');
-                 ul.appendChild(li);
-                 li.setAttribute('class', 'first-row');
-                 li.innerHTML = `
-                     <span>
-                        <b>${employee[index].name}</b>
-                     </span> 
-                     <span>
-                         <b>${employee[index].salary}</b>
-                     </span> 
-                     <span>
-                     <b>${employee[index].id}</b>
-                     </span>`;
-             }             
+             
+                  
          });    
 }
 fetchEmployeeData();
