@@ -1,0 +1,12 @@
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.first-row {
+    padding: 10px;
+    font-size: 30px;
+   border: 1px solid white;
+   height: 222px;
+    width: 81%;
+}

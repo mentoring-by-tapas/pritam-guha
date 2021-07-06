@@ -1,15 +1,15 @@
 {
-    "depertments": [
+    "depertment": [
         {
-            "dept-id": "001",
+            "dept-id": "D-001",
             "dept-name": "Web Desiner"
         },
         {
-            "dept-id": "002",
+            "dept-id": "D-002",
             "dept-name": "programmer"
         },
         {
-            "dept-id": "003",
+            "dept-id": "D-003",
             "dept-name": "flutter"
         }
     ]
