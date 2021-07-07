@@ -20,9 +20,9 @@ async function fetchEmployeeData(){
                 ul.appendChild(li);
                 li.setAttribute('class', 'first-row');
                 li.innerHTML = `
-                    <p>
-                       <b>${employee[index].name}</b>
-                    </p> 
+                    
+                   <a href="">${employee[index].name}</a>
+                                      
                     <p>
                         <b>${employee[index].salary}</b>
                     </p> 
@@ -39,8 +39,13 @@ async function fetchEmployeeData(){
              // All users
              let department = data.depertment;
              console.log(department);
-             
+
+             let search = department.find(function(item){
+                return item.id = "D-001";
+            })
                   
          });    
+
+         
 }
 fetchEmployeeData();
