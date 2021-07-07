@@ -19,7 +19,7 @@
             "isParmanent": true
         },
         {
-            "id": "E-001",
+            "id": "E-002",
             "name": "Nandita Ghosh",
             "dept_id": "D-002",
             "salary": "34564840",
@@ -28,7 +28,7 @@
             "isParmanent": true
         },
         {
-            "id": "E-001",
+            "id": "E-002",
             "name": "reshmi Adhikary",
             "dept_id": "D-002",
             "salary": "34564840",
@@ -37,7 +37,7 @@
             "isParmanent": true
         },
         {
-            "id": "E-001",
+            "id": "E-003",
             "name": "Saheb Adhikary",
             "dept_id": "D-003",
             "salary": "34564840",

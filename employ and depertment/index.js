@@ -39,12 +39,19 @@ async function fetchEmployeeData(){
              // All users
              let department = data.depertment;
              console.log(department);
-
+                    
+              
+             let li = document.createElement('li');
+              
              let search = department.find(function(item){
-                return item.id = "D-001";
+                return item.id = 'E-001';
             })
+            console.log(`Serach item s ${search["dept-name"]}`)
+            li.innerHTML=`
+                <p>${search["dept-name"]}</p>
+            `
                   
-         });    
+         });  
 
          
 }
