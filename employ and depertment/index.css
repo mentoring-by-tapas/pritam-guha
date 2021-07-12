@@ -3,10 +3,38 @@ body {
     color: #fff;
 }
 
-.first-row {
+/* .first-row {
     padding: 10px;
     font-size: 30px;
    border: 1px solid white;
    height: 222px;
     width: 81%;
+} */
+
+.employee-li{
+    padding-bottom: 10px;
+    padding-left: 30px;
+    font-size: 30px;
+    border: 1px solid white;
+   height: 222px;
+    width: 81%;
+}
+
+h1{
+    text-align: center;
+}
+
+.employee-name{
+    display: flex;
+    justify-content: space-between;
+}
+
+.employee-salary{
+    display: flex;
+    justify-content: space-between;
+}
+
+.employee-dob{
+    display: flex;
+    justify-content: space-between;
 }

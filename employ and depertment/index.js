@@ -1,58 +1,50 @@
-async function fetchEmployeeData(){
 
 
-    let secondDiv = document.getElementById('department-id'); 
-    let mainDiv = document.getElementById('employee-id');
+function employee() {
+    const employeeList = document.getElementById('employee-id');
 
-        fetch('./data/employee.json')
-         .then(response => response.json())
+    fetch('./data/employee.json')
+        .then(response => response.json())
             .then(data => {
-                // All users
-             let employee = data.employee;
-             console.log(employee);
+                const employees = data.employees;
+                console.log(employees);
 
-             let ul = document.createElement('ul');
-             mainDiv.appendChild(ul);
-             console.log(mainDiv);
+                const ul = document.createElement('ul');
+                ul.setAttribute('class','employee-list');
 
-             for (let index=0; index<= employee.length -1; index++) {
-                let li = document.createElement('li');
-                ul.appendChild(li);
-                li.setAttribute('class', 'first-row');
-                li.innerHTML = `
-                    
-                   <a href="">${employee[index].name}</a>
-                                      
-                    <p>
-                        <b>${employee[index].salary}</b>
-                    </p> 
-                    <p>
-                    <b>${employee[index].id}</b>
-                    </p>`;
-            }        
-                   
-            })
-  
-         fetch('./data/department.json')
-             .then(response => response.json())
-        .then(data => {
-             // All users
-             let department = data.depertment;
-             console.log(department);
-                    
-              
-             let li = document.createElement('li');
-              
-             let search = department.find(function(item){
-                return item.id = 'E-001';
-            })
-            console.log(`Serach item s ${search["dept-name"]}`)
-            li.innerHTML=`
-                <p>${search["dept-name"]}</p>
-            `
-                  
-         });  
-
-         
+                for (let employee of employees) {
+                    const li = document.createElement('li');
+                    const departmentId = employee['dept_id'];
+                    console.log(departmentId);
+                    li.setAttribute('class','employee-li');
+                    li.innerHTML = `
+                        <a onclick="fetchDepartment('${departmentId}', '${employee.id}');" href = "#" class="employee-name">${employee.name}</a><br>
+                        <span class="employee-salary">${employee.salary}</span><br>
+                        <span class="employee-dob">${employee['date_of_birth']}</span>
+                        <div id="${employee.id}"></div>
+                        `;
+                        ul.appendChild(li);
+                }
+                employeeList.appendChild(ul);
+            });
 }
-fetchEmployeeData();
+
+        function fetchDepartment(departmentId, eid) {
+            console.log(eid)
+            console.log(`fetch department data ${departmentId}`);
+
+            fetch('./data/department.json')
+                .then(response => response.json())
+                     .then(data => {
+                        const departments = data.department;
+
+                        
+                        const department = departments.find(d => d['dept-id'] === departmentId);
+                        console.log(department);
+
+                        document.getElementById(eid).innerHTML = department['dept-name'];
+            });
+        }
+
+employee();
+
