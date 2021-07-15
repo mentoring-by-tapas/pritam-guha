@@ -1,22 +1,17 @@
 body {
+    text-align: center;
     background-color: #000;
     color: #fff;
 }
 
-/* .first-row {
-    padding: 10px;
-    font-size: 30px;
-   border: 1px solid white;
-   height: 222px;
-    width: 81%;
-} */
-
 .employee-li{
+    display: flex;
+    justify-content: space-between;
     padding-bottom: 10px;
     padding-left: 30px;
     font-size: 30px;
     border: 1px solid white;
-   height: 222px;
+    height: 120px;
     width: 81%;
 }
 
