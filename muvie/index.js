@@ -20,9 +20,9 @@ function fetchUserData() {
                     const li = document.createElement('li');
                     li.setAttribute('class', 'user-row');
                     li.innerHTML = `
-                        <span>
-                        <img src="https://res.cloudinary.com/dig3gb1rw/image/upload/v1623339802/34922_aoarvn.jpg" alt="Girl in a jacket" width="30%" height="200px">
-                        </span>
+                        <img width="100" height="100" src="${movies[index].img}" alt="${movies[index].name}">
+                           
+                        </img>
                         <span>
                            <b>${movies[index].name}</b>
                         </span> rating is 
