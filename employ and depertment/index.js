@@ -18,10 +18,10 @@ function employee() {
                 console.log(departmentId);
                 li.setAttribute('class', 'employee-li');
                 li.innerHTML = `
-                        <a onclick="fetchDepartment('${departmentId}', '${employee.id}')" class="employee-name">${employee.name}</a><br>
-                        <span class="employee-salary">${employee.salary}</span><br>
+                        <a onclick="fetchDepartment('${departmentId}', '${employee.id}')" class="employee-name">${employee.name}</a>
+                        <span class="employee-salary">${employee.salary}</span>
                         <span class="employee-dob">${employee['date_of_birth']}</span>
-                        <div id="${employee.id}"></div>
+                        <div class="output", id="${employee.id}"></div>
                         `;
                 ul.appendChild(li);
             }
