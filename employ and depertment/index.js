@@ -17,8 +17,8 @@ function employee() {
                 const departmentId = employee['dept_id'];
                 console.log(departmentId);
                 li.setAttribute('class', 'employee-li');
-                li.innerHTML = `
-                        <a onclick="fetchDepartment('${departmentId}', '${employee.id}')" class="employee-name">${employee.name}</a>
+                li.innerHTML = `                       
+                        <a onclick="fetchDepartment('${departmentId}', '${employee.id}')" href="#" class="employee-name">${employee.name}</a>
                         <span class="employee-salary">${employee.salary}</span>
                         <span class="employee-dob">${employee['date_of_birth']}</span>
                         <div class="output", id="${employee.id}"></div>

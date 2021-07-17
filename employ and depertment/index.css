@@ -1,26 +1,66 @@
 body {
+    position: relative;
+    left: 199px;
     text-align: center;
-    background-color:coral;;
+    background-color:white;;
     color: #111;
     border: 1px solid #111;
+    width: 60%;
 }
 
 .employee-li{
     display: flex;
     justify-content: space-around;
-    font-size: 30px;
-    height: 200px;
+    font-size: 20px;
+    height: 70px;
     width: 81%;
+    padding-top: 5%;
+    border-bottom: 2px solid gray;
+    border-width: 50%;
+    padding-left: 7%;
 }
 
 h1{
     text-align: center;
+    padding-bottom: 2%;
 }
 
 .output{
-    display: flex;
-    justify-content: space-around;
+    position: relative;
+    bottom: 30px;
+    padding-top: 30px;
+    box-shadow: 5px 10px #888888;
     border: 1px solid #111;
-    height: auto;
+    height: 50px;
     width: 20%;
 }
+
+@media only screen and (max-width: 540px) {
+    body{
+    background-color: greenyellow;
+    position: relative;
+    left: 19px;
+    width: 88%;
+    }
+
+    .output{
+        position: relative;
+        bottom: 20px;
+        width: 100px;
+    }
+
+    .employee-li{
+         position: relative;
+         right: 20px;
+    }
+    .employee-name{
+        padding-right: 10%;
+    }
+    .employee-salary{
+        padding-right: 10%;
+    }
+    .employee-dob{
+        padding-right: 10%;
+    }
+  }
+
