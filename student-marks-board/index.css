@@ -70,3 +70,22 @@ td, th {
 th{
     background-color: darkgrey;
 }
+@media screen and (max-width: 590px) {
+    .standard-one{
+        width: 31%;
+        position: relative;
+        top: 19px;
+    }
+    .name{
+    height: 12px;
+    position: relative;
+    left: 22%;
+    top: 30px;
+    }
+    .grade{
+    height: 12px;
+    position: relative;
+    left: 47%;
+    top: 30px;
+    }
+  }
