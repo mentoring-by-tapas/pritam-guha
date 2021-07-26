@@ -1,0 +1,91 @@
+.home-section{
+    border: 1px solid black;
+    height: 712px;
+    background-image: url("https://res.cloudinary.com/dig3gb1rw/image/upload/v1626939772/Untitled_design_p60iyn.jpg");
+}
+.button{
+    background: crimson;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    position: relative;
+    top: 30%;
+    left: 10%;
+}
+.header{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+    position: relative;
+    left: 10%;
+    top: 36%;
+    color: white;
+}
+.result-section{
+    text-align: center;
+}
+.search{
+    font-size: 25px;
+    border-radius: 6px;
+}
+.search-button{
+    height: 35px;
+    border: 1px solid black;
+    position: relative;
+    bottom: -11px;
+    border-radius: 6px;
+}
+.standard-one{
+    width: 19%;
+    border: 1px solid black;
+    margin: 0;
+    background-color: rgb(240, 189, 94);
+    position: relative;
+    top: 34px;
+}
+table {
+    font-family: arial, sans-serif;
+    width: 100%;
+  }
+td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+  }
+.name{
+    height: 29px;
+    position: relative;
+    top: 37px;
+    left: 20%;
+}
+.grade{
+    height: 29px;
+    position: relative;
+    top: 37px;
+    left: 46%;
+}
+th{
+    background-color: darkgrey;
+}
+@media screen and (max-width: 590px) {
+    .standard-one{
+        width: 31%;
+        position: relative;
+        top: 19px;
+    }
+    .name{
+    height: 12px;
+    position: relative;
+    left: 22%;
+    top: 30px;
+    }
+    .grade{
+    height: 12px;
+    position: relative;
+    left: 47%;
+    top: 30px;
+    }
+  }
