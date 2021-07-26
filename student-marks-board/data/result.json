@@ -1,0 +1,312 @@
+{
+    "standard-1" : [
+        {
+               "id": "E-001",
+               "name": "1. Alfreds Futterkiste",
+               "grade": "A+",
+               "percentage": "90%"
+        },
+        {
+               "id": "E-001",
+               "name": "2. Centro comercial Moctezuma",
+               "grade": "B+",
+               "percentage": "60%"
+        },
+        {
+               "id": "E-001",
+               "name": "3. Ernst Handel",
+               "grade": "AA",
+               "percentage": "99%"
+        },
+        {
+               "id": "E-001",
+               "name": "4. Island Trading",
+               "grade": "B",
+               "percentage": "40%"
+        },
+        {
+               "id": "E-001",
+               "name": "5. Alfreds Futterkiste",
+               "grade": "A+",
+               "percentage": "90%"
+        },
+        {
+               "id": "E-001",
+               "name": "6. Laughing Bacchus Winecellars",
+               "grade": "A+",
+               "percentage": "88%"
+        },
+        {
+               "id": "E-001",
+               "name": "7. Magazzini Alimentari Riuniti",
+               "grade": "A+",
+               "percentage": "90%"
+        },
+        {
+               "id": "E-001",
+               "name": "8. Ernst Handel",
+               "grade": "AA",
+               "percentage": "99%"
+        },
+        {
+               "id": "E-001",
+               "name": "9. Laughing Bacchus Winecellars",
+               "grade": "A+",
+               "percentage": "88%"
+        },
+        {
+               "id": "E-001",
+               "name": "10. Magazzini Alimentari Riuniti",
+               "grade": "C",
+               "percentage": "50%"
+        }
+    ],
+    "standard-2" : [
+       {
+              "id": "E-002",
+              "name": "1. Alfreds Futterkiste",
+              "grade": "A+",
+              "percentage": "90%"
+       },
+       {
+              "id": "E-002",
+              "name": "2. Centro comercial Moctezuma",
+              "grade": "B+",
+              "percentage": "60%"
+       },
+       {
+              "id": "E-002",
+              "name": "3. Ernst Handel",
+              "grade": "AA",
+              "percentage": "99%"
+       },
+       {
+              "id": "E-002",
+              "name": "4. Island Trading",
+              "grade": "B",
+              "percentage": "40%"
+       },
+       {
+              "id": "E-002",
+              "name": "5. Alfreds Futterkiste",
+              "grade": "A+",
+              "percentage": "90%"
+       },
+       {
+              "id": "E-002",
+              "name": "6. Laughing Bacchus Winecellars",
+              "grade": "A+",
+              "percentage": "88%"
+       },
+       {
+              "id": "E-002",
+              "name": "7. Magazzini Alimentari Riuniti",
+              "grade": "A+",
+              "percentage": "90%"
+       },
+       {
+              "id": "E-002",
+              "name": "8. Ernst Handel",
+              "grade": "AA",
+              "percentage": "99%"
+       },
+       {
+              "id": "E-002",
+              "name": "9. Laughing Bacchus Winecellars",
+              "grade": "A+",
+              "percentage": "88%"
+       },
+       {
+              "id": "E-002",
+              "name": "10. Magazzini Alimentari Riuniti",
+              "grade": "C",
+              "percentage": "50%"
+       }
+   ],
+   "standard-3" : [
+       {
+              "id": "E-003",
+              "name": "1. Alfreds Futterkiste",
+              "grade": "A+",
+              "percentage": "90%"
+       },
+       {
+              "id": "E-003",
+              "name": "2. Centro comercial Moctezuma",
+              "grade": "B+",
+              "percentage": "60%"
+       },
+       {
+              "id": "E-003",
+              "name": "3. Ernst Handel",
+              "grade": "AA",
+              "percentage": "99%"
+       },
+       {
+              "id": "E-003",
+              "name": "4. Island Trading",
+              "grade": "B",
+              "percentage": "40%"
+       },
+       {
+              "id": "E-003",
+              "name": "5. Alfreds Futterkiste",
+              "grade": "A+",
+              "percentage": "90%"
+       },
+       {
+              "id": "E-003",
+              "name": "6. Laughing Bacchus Winecellars",
+              "grade": "A+",
+              "percentage": "88%"
+       },
+       {
+              "id": "E-003",
+              "name": "7. Magazzini Alimentari Riuniti",
+              "grade": "A+",
+              "percentage": "90%"
+       },
+       {
+              "id": "E-003",
+              "name": "8. Ernst Handel",
+              "grade": "AA",
+              "percentage": "99%"
+       },
+       {
+              "id": "E-003",
+              "name": "9. Laughing Bacchus Winecellars",
+              "grade": "A+",
+              "percentage": "88%"
+       },
+       {
+              "id": "E-003",
+              "name": "10. Magazzini Alimentari Riuniti",
+              "grade": "C",
+              "percentage": "50%"
+       }
+   ],
+   "standard-4" : [
+       {
+              "id": "E-004",
+              "name": "1. Alfreds Futterkiste",
+              "grade": "A+",
+              "percentage": "90%"
+       },
+       {
+              "id": "E-004",
+              "name": "2. Centro comercial Moctezuma",
+              "grade": "B+",
+              "percentage": "60%"
+       },
+       {
+              "id": "E-004",
+              "name": "3. Ernst Handel",
+              "grade": "AA",
+              "percentage": "99%"
+       },
+       {
+              "id": "E-004",
+              "name": "4. Island Trading",
+              "grade": "B",
+              "percentage": "40%"
+       },
+       {
+              "id": "E-004",
+              "name": "5. Alfreds Futterkiste",
+              "grade": "A+",
+              "percentage": "90%"
+       },
+       {
+              "id": "E-004",
+              "name": "6. Laughing Bacchus Winecellars",
+              "grade": "A+",
+              "percentage": "88%"
+       },
+       {
+              "id": "E-004",
+              "name": "7. Magazzini Alimentari Riuniti",
+              "grade": "A+",
+              "percentage": "90%"
+       },
+       {
+              "id": "E-004",
+              "name": "8. Ernst Handel",
+              "grade": "AA",
+              "percentage": "99%"
+       },
+       {
+              "id": "E-004",
+              "name": "9. Laughing Bacchus Winecellars",
+              "grade": "A+",
+              "percentage": "88%"
+       },
+       {
+              "id": "E-004",
+              "name": "10. Magazzini Alimentari Riuniti",
+              "grade": "C",
+              "percentage": "50%"
+       }
+   ],
+   "standard-5" : [
+       {
+              "id": "E-005",
+              "name": "1. Alfreds Futterkiste",
+              "grade": "A+",
+              "percentage": "90%"
+       },
+       {
+              "id": "E-005",
+              "name": "2. Centro comercial Moctezuma",
+              "grade": "B+",
+              "percentage": "60%"
+       },
+       {
+              "id": "E-005",
+              "name": "3. Ernst Handel",
+              "grade": "AA",
+              "percentage": "99%"
+       },
+       {
+              "id": "E-005",
+              "name": "4. Island Trading",
+              "grade": "B",
+              "percentage": "40%"
+       },
+       {
+              "id": "E-005",
+              "name": "5. Alfreds Futterkiste",
+              "grade": "A+",
+              "percentage": "90%"
+       },
+       {
+              "id": "E-005",
+              "name": "6. Laughing Bacchus Winecellars",
+              "grade": "A+",
+              "percentage": "88%"
+       },
+       {
+              "id": "E-005",
+              "name": "7. Magazzini Alimentari Riuniti",
+              "grade": "A+",
+              "percentage": "90%"
+       },
+       {
+              "id": "E-005",
+              "name": "8. Ernst Handel",
+              "grade": "AA",
+              "percentage": "99%"
+       },
+       {
+              "id": "E-005",
+              "name": "9. Laughing Bacchus Winecellars",
+              "grade": "A+",
+              "percentage": "88%"
+       },
+       {
+              "id": "E-005",
+              "name": "10. Magazzini Alimentari Riuniti",
+              "grade": "C",
+              "percentage": "50%"
+       }
+   ]               
+   }
