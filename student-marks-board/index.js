@@ -16,8 +16,11 @@ fetch('./data/result.json')
 		const standardFourData = data['standard-4'];
 		const standardFiveData = data['standard-5'];
 
-		reuse(standardOneData, standardOne, standardTwoData, standardTwo, standardThreeData, standardThree,
-            standardFourData, standardFour, standardFiveData, standardFive);
+		reuse(standardOneData, standardOne);
+		reuse(standardTwoData, standardTwo);
+		reuse(standardThreeData, standardThree);
+		reuse(standardFourData, standardFour);
+		reuse(standardFiveData, standardFive);
 	});
 
 function reuse(data, standard) {
