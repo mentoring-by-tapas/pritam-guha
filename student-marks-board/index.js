@@ -25,7 +25,7 @@ fetch('./data/result.json')
 
 function reuse(data, standard) {
 	for (let student of data) {
-		const tableRow = document.createElement('tr');
+		const tableRow = document.createElement('tr');      
 		tableRow.innerHTML = `
                 <td>${student.name}</td>
                 <td>${student.grade}</td>
@@ -33,4 +33,8 @@ function reuse(data, standard) {
             `;
 		standard.appendChild(tableRow);
 	}
+}
+
+function studentResult() {
+    document.getElementById('button').innerHTML = tableRow;
 }
