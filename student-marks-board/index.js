@@ -58,11 +58,19 @@ function reuse(data, standard) {
 	}
 }
 
-function search(value) {
+function myFunction() {
+	let searchName = document.getElementById('searchName').value;
+
 	fetch('./data/result.json')
-		// Parse data as js
-		.then((response) => response.json())
-		.then((data) => {
-			renderOnScreen(data);
-		});
+	// Parse data as js
+	.then((response) => response.json())
+	.then((data) => {
+		const result = data.results;
+            console.log(result);
+
+			let tr = searchName.getElementByIdTagname('searchName');
+			for(let i=0; i<=tr.length; i++){
+				let td = tr[i].getElementByIdTagname('td')[0];
+			}
+	});
 }
