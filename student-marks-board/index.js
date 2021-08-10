@@ -6,7 +6,7 @@ fetch('./data/result.json')
 	// Parse data as js
 	.then((response) => response.json())
 	.then((data) => {
-		renderOnScreen(data);
+		// renderOnScreen(data);
 	});
 
 function renderOnScreen(data) {
@@ -58,19 +58,25 @@ function reuse(data, standard) {
 	}
 }
 
-function myFunction() {
-	let searchName = document.getElementById('searchName').value;
+
+function submitHandler(event) {
+	event.preventDefault();
+	const searchName = document.getElementById('button').value;
 
 	fetch('./data/result.json')
-	// Parse data as js
-	.then((response) => response.json())
-	.then((data) => {
-		const result = data.results;
-            console.log(result);
+		// Parse data as js
+		.then((response) => response.json())
+		.then((data) => {
+			const newData = { ...data };
 
-			let tr = searchName.getElementByIdTagname('searchName');
-			for(let i=0; i<=tr.length; i++){
-				let td = tr[i].getElementByIdTagname('td')[0];
-			}
-	});
+			const standards = Object.keys(data);
+
+			standards.forEach((item) => {
+				newData[item] = data[item].filter((item) => item.name === searchName);
+			});
+
+			console.log(newData);
+
+			renderOnScreen(newData);
+		});
 }

@@ -16,23 +16,24 @@
 		<div class="result-section" id="searchName">
 			<div>
 				<h1 class="result-header">Second Semester topper-2021</h1>
-				<input
-					class="search"
-					type="text"
-					placeholder="Student name..."
-					name="search"
-					id="button"
-					onkeydown="myFunction()"
-				/>
-				<img
-					class="search-button"
-					src="https://res.cloudinary.com/dig3gb1rw/image/upload/v1627017039/Untitled_design_toqejp.jpg"
-					alt=""
-				/>
+				<form onsubmit="submitHandler(event)">
+					<input
+						class="search"
+						type="text"
+						placeholder="Student name..."
+						name="search"
+						id="button"
+					/>
+					<img
+						class="search-button"
+						src="https://res.cloudinary.com/dig3gb1rw/image/upload/v1627017039/Untitled_design_toqejp.jpg"
+						alt="search icon"
+						onClick="submitHandler(event)"
+					/>
+				</form>
 			</div>
 
 			<div id="results"></div>
-
 		</div>
 		<script src="index.js"></script>
 	</body>
