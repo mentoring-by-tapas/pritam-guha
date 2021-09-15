@@ -1,0 +1,46 @@
+{
+    "singers" : [
+        {
+               "id":"A-10",
+               "name": "Arijit Sing",
+               "age": "32",
+               "number of albums": "22",
+               "language": ["Bengali", "Hindi"]
+        },
+        {
+               "id":"A-20",
+               "name": "pritam Sing",
+               "age": "22",
+               "number of albums": "24",
+               "language": ["Bengali", "Hindi","english"]
+        },
+        {
+               "id":"A-30",
+               "name": "rahul Sing",
+               "age": "42",
+               "number of albums": "22",
+               "language": ["Bengali", "Hindi"]
+        },
+        {
+               "id":"A-40",
+               "name": "ashit Sing",
+               "age": "52",
+               "number of albums": "22",
+               "language": ["English", "Hindi"]
+        },
+        {
+               "id":"A-50",
+               "name": "rakesh Sing",
+               "age": "22",
+               "number of albums": "22",
+               "language": ["Urdhu", "Hindi"]
+        },
+        {
+               "id":"A-60",
+               "name": "amit Sing",
+               "age": "42",
+               "number of albums": "22",
+               "language": ["Nepali", "Hindi"]
+        }
+    ]
+}      
