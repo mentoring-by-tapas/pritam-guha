@@ -7,10 +7,13 @@ function fetchUserData() {
                 const singers = data.singers;
                 console.log(singers);
                	
-        const bengaliSingers = data.singers.filter(singers => {
-            return singers.language.includes("Bengali")
-        })
-        console.log(bengaliSingers);
+        function bengaliSingers() {
+            const bengaliSingers = data.singers.filter(singers => {
+                return singers.language.includes("Bengali")
+            })
+            console.log(bengaliSingers);
+        }
+        bengaliSingers();
         
     });    
 }
