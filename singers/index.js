@@ -14,6 +14,18 @@ function fetchUserData() {
             console.log(bengaliSingers);
         }
         bengaliSingers();
+
+        function multipleLanguage() {
+            const multipleLanguage = data.singers.filter(singers => {
+                return singers.language.includes("Bengali")&&
+                 singers.language.includes("Hindi")&&
+                 singers.language.includes("english")&&
+                 singers.language.includes("Urdhu")&&
+                 singers.language.includes("Nepali")
+            })
+            console.log(multipleLanguage);
+        }
+        multipleLanguage();
         
     });    
 }
