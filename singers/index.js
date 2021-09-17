@@ -15,6 +15,7 @@ function fetchUserData() {
         }
         bengaliSingers();
 
+
         function multipleLanguage() {
             const multipleLanguage = data.singers.filter(singers => {
                 return singers.language.includes("Bengali")&&
@@ -26,6 +27,15 @@ function fetchUserData() {
             console.log(multipleLanguage);
         }
         multipleLanguage();
+
+
+        function singersAge() {
+            const singersAge = data.singers.filter(singers => {
+                return singers.age.includes("25")
+            })
+            console.log(singersAge);
+        }
+        singersAge();
         
     });    
 }
