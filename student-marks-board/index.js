@@ -1,7 +1,7 @@
 function searchFun() {
-    let filter = document.getElementById('myInput').value.toUpperCase();
+    let filter = document.getElementById('myInput').value.toLowerCase();
 
-    let myTable = document.getElementsById('myTable');
+    let myTable = document.getElementById('myTable');
 
     let tr = myTable.getElementsByTagName('tr');
 
@@ -11,7 +11,7 @@ function searchFun() {
         if(td) {
             let textValue = td.textContent || td.innerHTML;
 
-            if(textValue.toUpperCase().indexOf(filter) > -1) {
+            if(textValue.toLowerCase().indexOf(filter) > -1) {
                 tr[i].style.display = "";
             }else{
                 tr[i].style.display = "none";
