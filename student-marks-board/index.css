@@ -50,7 +50,7 @@ table {
     font-family: arial, sans-serif;
     width: 100%;
   }
-td, th {
+.userLi {
     border: 1px solid black;
     text-align: left;
     padding: 8px;
@@ -67,7 +67,7 @@ td, th {
     top: 37px;
     left: 46%;
 }
-th{
+li{
     background-color: darkgrey;
 }
 @media screen and (max-width: 590px) {
