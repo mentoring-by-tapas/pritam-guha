@@ -19,11 +19,11 @@ function createUI(users) {
 
     let keys = userData.keys('userData');
 
-    for(let j = 0; j <= keys; j++) {
-        for (let i = j; i <= users.length - 1; i++) {
+    for(let j = 0; j <= keys - 1; j++) {
+        for (let i = 0; i <= users.length - 1; i++) {
             const li = document.createElement('li');
             li.setAttribute('class','userLi');
-            li.innerHTML = `<span>${users[i].name}</span><span>${users[i].grade}</span>`;
+            li.innerHTML = `<span>${users[j],[i].name}</span><span>${users[i].grade}</span>`;
             ul.appendChild(li);
         }
     }
