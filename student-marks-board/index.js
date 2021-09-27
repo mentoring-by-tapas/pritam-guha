@@ -6,7 +6,7 @@ function fetchData() {
 		.then((data) => {
 			const users = data.users;
 			userData = users;
-			createUI(users[0]['standard_1']);
+			createUI(users[0]);
 		});
 }
 fetchData();
@@ -17,12 +17,16 @@ function createUI(users) {
 	const ul = document.createElement('ul');
 	mainDiv.appendChild(ul);
 
-	for (let i = 0; i <= users.length - 1; i++) {
-		const li = document.createElement('li');
-        li.setAttribute('class','userLi');
-		li.innerHTML = `<span>${users[i].name}</span><span>${users[i].grade}</span>`;
-		ul.appendChild(li);
-	}
+    let keys = userData.keys('userData');
+
+    for(let j = 0; j <= keys; j++) {
+        for (let i = j; i <= users.length - 1; i++) {
+            const li = document.createElement('li');
+            li.setAttribute('class','userLi');
+            li.innerHTML = `<span>${users[i].name}</span><span>${users[i].grade}</span>`;
+            ul.appendChild(li);
+        }
+    }
 }
 
 function searchFun(event) {
