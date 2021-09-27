@@ -23,7 +23,7 @@ function createUI(users) {
         for (let i = 0; i <= users.length - 1; i++) {
             const li = document.createElement('li');
             li.setAttribute('class','userLi');
-            li.innerHTML = `<span>${users[j],[i].name}</span><span>${users[i].grade}</span>`;
+            li.innerHTML = `<span>${users[i].name}</span><span>${users[i].grade}</span>`;
             ul.appendChild(li);
         }
     }
