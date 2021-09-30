@@ -10,10 +10,10 @@ function fetchData() {
 			const keys = Object.keys(users);
 
 			for (let i = 0; i <= keys.length - 1; i++) {
-				console.log('users', users[keys[i]]);
 				createUI(users[keys[i]]);
 			}
 		});
+		debugger;
 }
 fetchData();
 
@@ -35,17 +35,14 @@ function searchFun(event) {
 
 	const keys = Object.keys(userData);
 
-	const filter = [];
-
-	for (let i = 0; i <= keys.length - 1; i++) {
-		filter.push(userData[keys[i]].filter((user) => {
+		const filteredUsers = userData[keys[i]].filter((user) => {
 			return user.name.toLowerCase().includes(term.toLowerCase());
-		}));
-	}
+		});
 
-	console.log('filter', filter);
+		console.log('filter', filteredUsers);
 
-	const mainDiv = document.getElementById('tableDiv');
-	mainDiv.innerHTML = '';
-	createUI(filteredUsers);
+		const mainDiv = document.getElementById('tableDiv');
+		mainDiv.innerHTML = '';
+		createUI(filteredUsers);
+	
 }
