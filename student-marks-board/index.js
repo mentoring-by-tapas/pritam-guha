@@ -13,7 +13,6 @@ function fetchData() {
 				createUI(users[keys[i]]);
 			}
 		});
-		debugger;
 }
 fetchData();
 
@@ -32,14 +31,14 @@ function createUI(users) {
 
 function searchFun(event) {
 	const term = event.target.value;
-
+	
 	const keys = Object.keys(userData);
 
-		const filteredUsers = userData[keys[i]].filter((user) => {
-			return user.name.toLowerCase().includes(term.toLowerCase());
-		});
-
-		console.log('filter', filteredUsers);
+		for(let i = 0; i <= keys.length - 1; i++) {
+			var filteredUsers = userData[keys[i]].filter((user) => {
+				return user.name.toLowerCase().includes(term.toLowerCase());
+			});
+		}
 
 		const mainDiv = document.getElementById('tableDiv');
 		mainDiv.innerHTML = '';
