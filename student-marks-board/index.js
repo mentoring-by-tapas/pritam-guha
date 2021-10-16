@@ -34,10 +34,12 @@ function searchFun(event) {
 	
 	const keys = Object.keys(userData);
 
+		let filteredUsers = [];
 		for(let i = 0; i <= keys.length - 1; i++) {
-			var filteredUsers = userData[keys[i]].filter((user) => {
+			let find = userData[keys[i]].filter((user) => {
 				return user.name.toLowerCase().includes(term.toLowerCase());
 			});
+			filteredUsers.push(...find);
 		}
 
 		const mainDiv = document.getElementById('tableDiv');
