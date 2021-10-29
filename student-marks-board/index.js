@@ -32,11 +32,11 @@ function createUI(users) {
 }
 
 function searchFun(event) {
-	const term = event.target.value;
+	const term = event.target.value;//when event handler is called the object value is target
 	
-	const keys = Object.keys(userData);
+	const keys = Object.keys(userData);//get the value from userData
 
-		let filteredUsers = [];
+		let filteredUsers = [];//this is a empty array
 		for(let i = 0; i <= keys.length - 1; i++) {
 			let find = userData[keys[i]].filter((user) => {
 				return user.name.toLowerCase().includes(term.toLowerCase());
