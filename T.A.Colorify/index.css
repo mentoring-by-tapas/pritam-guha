@@ -1,0 +1,31 @@
+.color__div {
+	height: 25rem;
+	width: 25rem;
+	background-color: #10bcf4;
+	border-radius: 50%;
+	margin: 5% auto;
+}
+
+ button {
+	padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button_1{
+    background-color: red;
+}
+
+.button_2{
+    background-color: green;
+}
+
+.button_3{
+    background-color: yellow;
+}
+
+.button_4{
+    background-color: blue;
+}
