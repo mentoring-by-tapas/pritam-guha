@@ -3,24 +3,35 @@ const msg = document.getElementById('message');
 const str = document.getElementById('strength');
 
 pass.addEventListener('input', () => {
-    if(pass.value.length > 0) {
-        msg.style.display = 'block';
+    if(pass.value.match(/[0-9]/)) {
+        // msg.innerHTML = `0 to 9 number then`;
+        pass.style.color = 'white';
     }else{
-        msg.style.display = 'none';
+        pass.style.color = 'red'
     }
-    if(pass.value.length < 4) {
-        str.innerHTML = 'weak';
-        pass.style.borderColor = '#ff5925';
-        msg.style.color = '#ff5925'
+
+    if(pass.value.match(/[A-Z]/)) {
+        pass.style.color = 'white';
+    }else{
+        pass.style.color = 'red'
     }
-    else if(pass.value.length >= 4 && pass.value.length > 8) {
-        str.innerHTML = 'medium';
-        pass.style.borderColor = 'yellow';
-        msg.style.color = 'yellow'
+
+    if(pass.value.match(/[a-z]/)) {
+        pass.style.color = 'white';
+    }else{
+        msg.style.color = 'red'
     }
-    else if(pass.value.length >= 8){
-        str.innerHTML = 'strong';
-        pass.style.borderColor = '#26d730';
-        msg.style.color = '#26d730'
+
+    if(pass.value.match(/[!\@\#\$\*\-\_\+]/)) {
+        pass.style.color = 'white';
+    }else{
+        pass.style.color = 'red'
     }
+
+    if(pass.value.length < 8) {
+        pass.style.color = 'white';
+    }else{
+        pass.style.color = 'red'
+    }
+    
 });
