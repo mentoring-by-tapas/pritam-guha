@@ -1,8 +1,8 @@
-const red = document.querySelector('.button_1');
-const green = document.querySelector('.button_2');
-const yellow = document.querySelector('.button_3');
-const blue = document.querySelector('.button_4');
-const circle = document.querySelector('.color__div');
+const red = document.getElementById('buttonFirst');
+const green = document.getElementById('buttonSecond');
+const yellow = document.getElementById('buttonThird');
+const blue = document.getElementById('buttonFourth');
+const circle = document.getElementById('colorDiv');
 
 red.addEventListener('click', function(e) {
     e.preventDefault();

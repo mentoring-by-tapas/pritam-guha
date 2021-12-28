@@ -1,4 +1,4 @@
-.color__div {
+#colorDiv {
 	height: 25rem;
 	width: 25rem;
 	background-color: #10bcf4;
@@ -14,18 +14,18 @@
     cursor: pointer;
 }
 
-.button_1{
+#buttonFirst{
     background-color: red;
 }
 
-.button_2{
+#buttonSecond{
     background-color: green;
 }
 
-.button_3{
+#buttonThird{
     background-color: yellow;
 }
 
-.button_4{
+#buttonFourth{
     background-color: blue;
 }
