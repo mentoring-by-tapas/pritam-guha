@@ -28,6 +28,8 @@ const checkWinner = function() {
        (boxText[e[0]].innerText !== '')) {
            document.querySelector('.info').innerText = boxText[e[0]].innerText + "Won";
             gameOver = true;
+        // document.querySelector('.line').style.width = "20vw";    
+        // document.querySelector('.line').style.transform = `translate(${e[3]}vw, ${e[4]}vw) rotate(${e[5]}deg)`;    
         };
     });
 };

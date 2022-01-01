@@ -34,6 +34,7 @@ nav li{
     grid-template-columns: repeat(3, 10vw);
     grid-template-rows: repeat(3, 10vw);
     font-family: 'Roboto', sans-serif;
+
 }
 
 .box{
@@ -52,6 +53,10 @@ nav li{
 .gameInfo{
     padding: 0 34px;
     font-family: 'Baloo Bhaina 2', cursive;
+}
+
+.gameInfo h1{
+    font-size: 2.5rem;
 }
 
 .imgBox video{
@@ -87,4 +92,28 @@ nav li{
 
 .info{
     font-size: 22px;
+}
+
+/* .line{
+    background-color: black;
+    width: 30vw;
+    height: 3px;
+    position: absolute;
+    transition: width is ease-in-out;
+} */
+
+@media screen and (max-width: 950px) {
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 34px;
+    }
+    .gameInfo h1{
+        font-size: 1.5rem;
+    }
+    .container{
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
 }
